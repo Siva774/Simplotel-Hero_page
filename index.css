@@ -1,0 +1,239 @@
+/* General Styles */
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+}
+
+li {
+    margin: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: Times New Roman;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.icons {
+    height: 20px;
+    width: 20px;
+}
+
+.hero {
+    background-image: url("https://i.im.ge/2024/07/25/VHOVyF.img1.jpeg");
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container {
+    background-color: rgba(212, 126, 119, 0.7);
+    width: 40%;
+    margin-left: 20px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.title {
+    color: white;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.description {
+    color: white;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.border {
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to right, #ff71ba, #ffa091, #ffba7a, #ffd363);
+}
+
+.orders {
+    background: linear-gradient(to right, #ff71ba, #ffa091, #ffba7a, #ffd363);
+    margin-top: 40px;
+    padding-bottom: 25px;
+}
+
+.order-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.order-title {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    font-size: 40px;
+}
+
+.img {
+    width: 100%;
+    height: auto;
+    max-height: 150px;
+}
+
+.card-container {
+    border: solid 25px white;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 80px;
+    background-color: white;
+    width: 300px;
+    height: 400px;
+    margin: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.card-item {
+    padding: 10px;
+}
+
+.item-name {
+    font-weight: bold;
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.item-description {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.button {
+    background-color: #ffcab8;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 18px;
+    border: none;
+    width: 145px;
+    cursor: pointer;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 1200px) {
+    .container {
+        width: 50%;
+    }
+    .card-container {
+        width: 250px;
+        height: 350px;
+    }
+}
+
+@media (max-width: 992px) {
+    ul {
+        flex-direction: row;
+        background-color: white;
+    }
+    li {
+        margin: 10px 0;
+    }
+    .container {
+        width: 70%;
+    }
+    .order-container {
+        flex-direction: row;
+    }
+    .card-container {
+        width: 200px;
+        height: 330px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 80%;
+    }
+    .order-title {
+        font-size: 30px;
+    }
+    .button {
+        width: 120px;
+        padding: 15px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 90%;
+    }
+    .hero {
+        height: 300px;
+    }
+    .order-title {
+        font-size: 24px;
+    }
+    .button {
+        width: 100px;
+        padding: 10px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width:600px) {
+    a {
+        text-decoration: none;
+        color: black;
+        font-family: Times New Roman;
+        font-weight: bold;
+        font-size: 14px;
+        padding: 7px;
+    }
+}
+
+@media (max-width:500px) {
+    a {
+        text-decoration: none;
+        color: black;
+        font-family: Times New Roman;
+        font-weight: bold;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        list-style-type: none;
+    }
+}
